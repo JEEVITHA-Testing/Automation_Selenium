@@ -336,7 +336,7 @@ public class WebDriverUtility {
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dst = new File(".\\ScreenShots\\"+screenshotName+".png");
+		File dst = new File(".\\ScreenShot\\"+screenshotName+".png");
 		Files.copy(src, dst);
 		
 		return dst.getAbsolutePath(); //used for extent reporting
